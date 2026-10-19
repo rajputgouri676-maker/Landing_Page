@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VELORA | Fashion for Everyone</title>
+    <link rel="stylesheet" href="./landingPage.css" />
+  </head>
+  <body>
+    <div class="announcement">ELEVATE YOUR EVERYDAY ✦</div>
+
+    <header class="navbar">
+      <a href="#home" class="logo">VELORA<span>.</span></a>
+
+      
+      <div class="nav-actions">
+        <input type="search" id="searchInput" placeholder="Search outfits..." />
+        <button type="button" id="loginBtn">Login</button>
+        <button type="button" id="cartBtn">
+          Bag (<span id="cartCount">0</span>)
+        </button>
+        <button type="button" class="menu-btn" id="menuBtn">☰</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-content">
+          <p class="eyebrow">YOUR STYLE, YOUR STORY</p>
+          <h1>Find the style<br />that feels like you.</h1>
+          <p>
+            From timeless Indian outfits to modern Western wear, discover styles
+            for every mood and every moment.
+          </p>
+          <a href="#shop" class="shop-btn">Explore Collection ↗</a>
+        </div>
+
+        <div class="hero-image">
+          <img
+            src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1000&q=85"
+            alt="Fashion model wearing a stylish outfit"
+          />
+        </div>
+      </section>
+
+      <section class="categories" id="women">
+        <div class="section-title">
+          <p class="eyebrow">EXPLORE YOUR STYLE</p>
+          <h2>Shop by Category</h2>
+        </div>
+
+        <div class="category-grid">
+          <a href="#shop" class="category-card" data-category="Women Indian">
+            <img
+              src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80"
+              alt="Women's Indian ethnic fashion"
+            />
+            <span>Women · Indian Wear</span>
+          </a>
+
+          <a href="#shop" class="category-card" data-category="Women Western">
+            <img
+              src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=600&q=80"
+              alt="Women's Western fashion"
+            />
+            <span>Women · Western Wear</span>
+          </a>
+
+          <a
+            href="#shop"
+            class="category-card"
+            id="men"
+            data-category="Men Indian"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&w=600&q=80"
+              alt="Men's traditional inspired fashion"
+            />
+            <span>Men · Indian Wear</span>
+          </a>
+
+          <a href="#shop" class="category-card" data-category="Men Western">
+            <img
+              src="https://images.unsplash.com/photo-1516257984-b1b4d707412e?auto=format&fit=crop&w=600&q=80"
+              alt="Men's Western fashion"
+            />
+            <span>Men · Western Wear</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="shop-section" id="shop">
+        <div class="section-title">
+          <p class="eyebrow">MADE FOR YOUR WARDROBE</p>
+          <h2>Our Collection</h2>
+          <p>Everyday favourites and outfits for special moments.</p>
+        </div>
+
+        <div class="filters" id="categoryFilters">
+          <button type="button" class="filter-btn active" data-category="All">
+            All
+          </button>
+          <button type="button" class="filter-btn" data-category="Women Indian">
+            Women · Indian
+          </button>
+          <button
+            type="button"
+            class="filter-btn"
+            data-category="Women Western"
+          >
+            Women · Western
+          </button>
+          <button type="button" class="filter-btn" data-category="Men Indian">
+            Men · Indian
+          </button>
+          <button type="button" class="filter-btn" data-category="Men Western">
+            Men · Western
+          </button>
+        </div>
+
+        <div class="product-grid" id="productGrid"></div>
+
+        <p id="emptyMessage" hidden>
+          No outfits found. Try another search or category.
+        </p>
+        <p
+          id="cartMessage"
+          class="cart-message"
+          role="status"
+          aria-live="polite"
+        ></p>
+      </section>
+
+      <section class="about-section" id="about">
+        <p class="eyebrow">A LITTLE ABOUT US</p>
+        <h2>Style has no boundaries.</h2>
+        <p>
+          We bring together traditional charm and modern fashion so you can
+          dress the way you feel, every single day.
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a href="#home" class="logo">VELORA<span>.</span></a>
+      <p>Indian roots. Global style.</p>
+
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="#about">About Us</a>
+      </div>
+
+      <p>© 2026 VELORA. All rights reserved.</p>
+    </footer>
+    <script src="./landingPage.js"></script>
+  </body>
+</html>
