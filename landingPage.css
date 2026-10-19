@@ -31,7 +31,7 @@ button {
     cursor: pointer;
 }
 
-/* Announcement bar */
+
 .announcement {
     background-color: #28251f;
     color: white;
@@ -41,7 +41,7 @@ button {
     letter-spacing: 2px;
 }
 
-/* Navigation bar */
+
 .navbar {
     min-height: 82px;
     padding: 18px 6%;
@@ -124,7 +124,7 @@ button {
     display: none;
 }
 
-/* Hero section */
+
 .hero {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -183,7 +183,7 @@ button {
     object-position: center;
 }
 
-/* Section headings */
+
 .categories,
 .shop-section {
     padding: 75px 7%;
@@ -207,7 +207,7 @@ button {
     font-size: 14px;
 }
 
-/* Fashion categories */
+
 .category-grid {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -241,7 +241,6 @@ button {
     font-size: 13px;
 }
 
-/* Product section */
 .shop-section {
     background-color: #f8f5f0;
 }
@@ -277,7 +276,7 @@ button {
     gap: 24px 18px;
 }
 
-/* Product cards created by JavaScript */
+
 .product-card {
     min-width: 0;
     background-color: white;
@@ -344,7 +343,7 @@ button {
     font-size: 14px;
 }
 
-/* About section */
+
 .about-section {
     padding: 75px 20px;
     text-align: center;
@@ -363,7 +362,7 @@ button {
     font-size: 15px;
 }
 
-/* Footer */
+
 .footer {
     padding: 45px 20px 25px;
     text-align: center;
@@ -399,7 +398,6 @@ button {
     color: #f8f5f0;
 }
 
-/* Tablet screens */
 @media (max-width: 1000px) {
     .navbar {
         padding: 18px 4%;
@@ -432,7 +430,7 @@ button {
     }
 }
 
-/* Mobile screens */
+
 @media (max-width: 650px) {
     .navbar {
         padding: 16px 5%;
@@ -530,7 +528,7 @@ button {
     }
 }
 
-/* Small mobile screens */
+
 @media (max-width: 380px) {
     .nav-actions {
         justify-content: flex-start;
