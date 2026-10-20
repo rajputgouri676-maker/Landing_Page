@@ -1,157 +1,208 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VELORA | Fashion for Everyone</title>
-    <link rel="stylesheet" href="./landingPage.css" />
-  </head>
-  <body>
-    <div class="announcement">ELEVATE YOUR EVERYDAY ✦</div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXORA | Premium Electronics</title>
+    <link rel="stylesheet" href="landingPage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
 
-    <header class="navbar">
-      <a href="#home" class="logo">VELORA<span>.</span></a>
+    <div class="announcement">
+        FREE SHIPPING ON ORDERS ABOVE ₹2,999
+    </div>
 
-      <div class="nav-actions">
-        <input type="search" id="searchInput" placeholder="Search outfits..." />
-        <button type="button" id="loginBtn">Login</button>
-        <button type="button" id="cartBtn">
-          Bag (<span id="cartCount">0</span>)
-        </button>
-        <button type="button" class="menu-btn" id="menuBtn">☰</button>
-      </div>
+    <header class="header">
+        <a href="#" class="logo">NEXORA<span>.</span></a>
+
+        <nav class="navbar" id="navbar">
+            <a href="#home" id="h" >Home</a>
+            <a href="#categories" id="c">Categories</a>
+            <a href="#products" id="s">Shop</a>
+            <a href="#about" id="a">About</a>
+        </nav>
+
+        <div class="header-actions">
+            <button id="searchBtn" aria-label="Search">⌕</button>
+            <button id="loginBtn">Login</button>
+            <button id="cartBtn">Bag (<span id="cartCount">0</span>)</button>
+            <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+        </div>
     </header>
 
     <main>
-      <section class="hero" id="home">
-        <div class="hero-content">
-          <p class="eyebrow">YOUR STYLE, YOUR STORY</p>
-          <h1>Find the style<br />that feels like you.</h1>
-          <p>
-            From timeless Indian outfits to modern Western wear, discover styles
-            for every mood and every moment.
-          </p>
-          <a href="#shop" class="shop-btn">Explore Collection ↗</a>
-        </div>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="eyebrow">THE FUTURE, IN YOUR HANDS</p>
+                <h1>Technology that<br>moves <em>you.</em></h1>
+                <p class="hero-description">
+                    Discover premium gadgets, innovative devices and
+                    everyday technology designed for your lifestyle.
+                </p>
+                <a href="#products" class="primary-btn">Explore Collection ↗</a>
 
-        <div class="hero-image">
-          <img
-            src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1000&q=85"
-            alt="Fashion model wearing a stylish outfit"
-          />
-        </div>
-      </section>
+                <div class="hero-stats">
+                    <div><strong>100%</strong><span>Quality Checked</span></div>
+                    <div><strong>Secure</strong><span>Shopping</span></div>
+                    <div><strong>Fast</strong><span>Delivery</span></div>
+                </div>
+            </div>
 
-      <section class="categories" id="women">
-        <div class="section-title">
-          <p class="eyebrow">EXPLORE YOUR STYLE</p>
-          <h2>Shop by Category</h2>
-        </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1468495244123-6c6c332eeece?auto=format&fit=crop&w=1100&q=85"
+                     alt="Premium electronics collection">
+                <div class="image-label">
+                    <span>CURATED FOR YOU</span>
+                    <strong>Discover what's next.</strong>
+                </div>
+            </div>
+        </section>
 
-        <div class="category-grid">
-          <a href="#shop" class="category-card" data-category="Women Indian">
-            <img
-              src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80"
-              alt="Women's Indian ethnic fashion"
-            />
-            <span>Women · Indian Wear</span>
-          </a>
+        <section class="categories section" id="categories">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">EXPLORE OUR WORLD</p>
+                    <h2>Shop by <em>category</em></h2>
+                </div>
+                <a href="#products" class="text-link">View all products ↗</a>
+            </div>
 
-          <a href="#shop" class="category-card" data-category="Women Western">
-            <img
-              src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=600&q=80"
-              alt="Women's Western fashion"
-            />
-            <span>Women · Western Wear</span>
-          </a>
+            <div class="category-grid">
+                <button class="category-card" data-category="Smartphones">
+                    <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=500&q=80" alt="Smartphones">
+                    <span>01</span><h3>Smartphones</h3><p>Smart living starts here</p>
+                </button>
 
-          <a
-            href="#shop"
-            class="category-card"
-            id="men"
-            data-category="Men Indian"
-          >
-            <img
-              src="https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&w=600&q=80"
-              alt="Men's traditional inspired fashion"
-            />
-            <span>Men · Indian Wear</span>
-          </a>
+                <button class="category-card" data-category="Computers">
+                    <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=500&q=80" alt="Computers">
+                    <span>02</span><h3>Computers</h3><p>Power your productivity</p>
+                </button>
 
-          <a href="#shop" class="category-card" data-category="Men Western">
-            <img
-              src="https://images.unsplash.com/photo-1516257984-b1b4d707412e?auto=format&fit=crop&w=600&q=80"
-              alt="Men's Western fashion"
-            />
-            <span>Men · Western Wear</span>
-          </a>
-        </div>
-      </section>
+                <button class="category-card" data-category="Audio">
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=500&q=80" alt="Audio">
+                    <span>03</span><h3>Audio</h3><p>Feel every frequency</p>
+                </button>
 
-      <section class="shop-section" id="shop">
-        <div class="section-title">
-          <p class="eyebrow">MADE FOR YOUR WARDROBE</p>
-          <h2>Our Collection</h2>
-          <p>Everyday favourites and outfits for special moments.</p>
-        </div>
+                <button class="category-card" data-category="Wearables">
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=500&q=80" alt="Wearables">
+                    <span>04</span><h3>Wearables</h3><p>Stay connected</p>
+                </button>
 
-        <div class="filters" id="categoryFilters">
-          <button type="button" class="filter-btn active" data-category="All">
-            All
-          </button>
-          <button type="button" class="filter-btn" data-category="Women Indian">
-            Women · Indian
-          </button>
-          <button
-            type="button"
-            class="filter-btn"
-            data-category="Women Western"
-          >
-            Women · Western
-          </button>
-          <button type="button" class="filter-btn" data-category="Men Indian">
-            Men · Indian
-          </button>
-          <button type="button" class="filter-btn" data-category="Men Western">
-            Men · Western
-          </button>
-        </div>
+                <button class="category-card" data-category="Gaming">
+                    <img src="https://images.unsplash.com/photo-1592840496694-26d035b52b48?auto=format&fit=crop&w=500&q=80" alt="Gaming">
+                    <span>05</span><h3>Gaming</h3><p>Level up your play</p>
+                </button>
 
-        <div class="product-grid" id="productGrid"></div>
+                <button class="category-card" data-category="Cameras">
+                    <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=500&q=80" alt="Cameras">
+                    <span>06</span><h3>Cameras</h3><p>Capture every moment</p>
+                </button>
 
-        <p id="emptyMessage" hidden>
-          No outfits found. Try another search or category.
-        </p>
-        <p
-          id="cartMessage"
-          class="cart-message"
-          role="status"
-          aria-live="polite"
-        ></p>
-      </section>
+                <button class="category-card" data-category="Accessories">
+                    <img src="https://images.unsplash.com/photo-1601593346740-925612772716?auto=format&fit=crop&w=500&q=80" alt="Accessories">
+                    <span>07</span><h3>Accessories</h3><p>Details that matter</p>
+                </button>
 
-      <section class="about-section" id="about">
-        <p class="eyebrow">A LITTLE ABOUT US</p>
-        <h2>Style has no boundaries.</h2>
-        <p>
-          We bring together traditional charm and modern fashion so you can
-          dress the way you feel, every single day.
-        </p>
-      </section>
+                <button class="category-card" data-category="Speakers">
+                    <img src="https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=500&q=80" alt="Speakers">
+                    <span>08</span><h3>Speakers</h3><p>Bring sound to life</p>
+                </button>
+            </div>
+        </section>
+
+        <section class="featured section" id="products">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">THE NEXORA EDIT</p>
+                    <h2>Our <em>favourites.</em></h2>
+                    <p class="section-subtitle">Thoughtfully selected technology for modern living.</p>
+                </div>
+            </div>
+
+            <div class="filter-bar">
+                <button class="filter-btn active" data-category="All">All Products</button>
+                <button class="filter-btn" data-category="Smartphones">Smartphones</button>
+                <button class="filter-btn" data-category="Computers">Computers</button>
+                <button class="filter-btn" data-category="Audio">Audio</button>
+                <button class="filter-btn" data-category="Wearables">Wearables</button>
+                <button class="filter-btn" data-category="Gaming">Gaming</button>
+                <button class="filter-btn" data-category="Cameras">Cameras</button>
+                <button class="filter-btn" data-category="Accessories">Accessories</button>
+                <button class="filter-btn" data-category="Speakers">Speakers</button>
+            </div>
+
+            <div class="search-box" id="searchBox">
+                <input type="text" id="searchInput" placeholder="Search gadgets and devices...">
+                <button id="closeSearch" aria-label="Close search">✕</button>
+            </div>
+
+            <div class="product-grid" id="productGrid"></div>
+            <p class="empty-message" id="emptyMessage">No products found. Try another search.</p>
+        </section>
+
+        <section class="promo">
+            <div class="promo-image">
+                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1000&q=85" alt="Modern technology workspace">
+            </div>
+            <div class="promo-content">
+                <p class="eyebrow">UPGRADE YOUR EVERYDAY</p>
+                <h2>Good technology.<br><em>Better living.</em></h2>
+                <p>From work to play, find devices that fit your world and make every day a little smarter.</p>
+                <a href="#products" class="primary-btn">Find Your Next Device ↗</a>
+            </div>
+        </section>
+
+        <section class="benefits section" id="about">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">THE NEXORA PROMISE</p>
+                    <h2>Shopping made <em>simple.</em></h2>
+                </div>
+            </div>
+
+            <div class="benefit-grid">
+                <div class="benefit-card">
+                    <span>✦</span>
+                    <h3>Quality First</h3>
+                    <p>Carefully selected gadgets for your everyday needs.</p>
+                </div>
+                <div class="benefit-card">
+                    <span>↗</span>
+                    <h3>Easy Shopping</h3>
+                    <p>Explore products with a clean and simple experience.</p>
+                </div>
+                <div class="benefit-card">
+                    <span>♡</span>
+                    <h3>Made for You</h3>
+                    <p>Discover technology for work, creativity and fun.</p>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
-      <a href="#home" class="logo">VELORA<span>.</span></a>
-      <p>Indian roots. Global style.</p>
-
-      <div class="footer-links">
-        <a href="#home">Home</a>
-        <a href="#shop">Shop</a>
-        <a href="#about">About Us</a>
-      </div>
-
-      <p>© 2026 VELORA. All rights reserved.</p>
+        <div class="footer-top">
+            <div>
+                <a href="#" class="logo footer-logo">NEXORA<span>.</span></a>
+                <p>Thoughtful technology for modern living.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#home"class=a>Home</a>
+                <a href="#categories" class="a">Categories</a>
+                <a href="#products" class="a">Shop</a>
+                <a href="#about" class="a">About</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 NEXORA. All rights reserved.</p>
+            <p>Technology for your world.</p>
+        </div>
     </footer>
-    <script src="./landingPage.js"></script>
-  </body>
+
+    <div class="toast" id="toast"></div>
+
+    <script src="landingPage.js"></script>
+</body>
 </html>
